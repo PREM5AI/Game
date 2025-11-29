@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <title>Untitled</title>
+    <link rel="stylesheet" href="./style.css">
+
+  </head>
+    
+  <body>
+  <!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Escape the Night — Horror Mini</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="topbar">
+    <h1>Escape the Night</h1>
+    <div class="hud">
+      <div id="level">Level: 1</div>
+      <div id="score">Notes: 0</div>
+      <div id="keys">Keys: 0</div>
+      <div id="lives">Lives: 3</div>
+    </div>
+    <div class="buttons">
+      <button id="startBtn">Start</button>
+      <button id="muteBtn">🔊</button>
+      <button id="restartBtn">Restart</button>
+      <!-- Replay button (visible after game over / win) -->
+      <button id="replayBtn" style="display:none;">Replay</button>
+    </div>
+  </div>
+
+  <main>
+    <canvas id="gameCanvas" width="1000" height="560" aria-label="Horror escape canvas"></canvas>
+
+    <div class="mobile-controls" aria-hidden="true">
+      <button id="leftBtn">◀</button>
+      <button id="jumpBtn">⬆</button>
+      <button id="rightBtn">▶</button>
+      <button id="sprintBtn">🏃</button>
+    </div>
+  </main>
+
+  <div id="overlay" class="overlay">
+    <div class="overlay-card">
+      <h2 id="overlayTitle">Escape the Night</h2>
+      <p id="overlayText">You wake up in a dark facility. Collect the key, avoid the entity, reach the exit.</p>
+      <button id="overlayBtn">Start</button>
+    </div>
+  </div>
+
+  <!-- Audio placeholders (put files in assets/ or change paths) -->
+  <audio id="bgm" loop preload="auto" src="assets/horror_bgm.mp3"></audio>
+  <audio id="sfxNote" preload="auto" src="assets/note.wav"></audio>
+  <audio id="sfxKey" preload="auto" src="assets/key.wav"></audio>
+  <audio id="sfxHurt" preload="auto" src="assets/hurt.wav"></audio>
+  <audio id="sfxDoor" preload="auto" src="assets/door.wav"></audio>
+
+  <script src="script.js"></script>
+</body>
+</html>
+    <script  src="./script.js"></script>
+
+  </body>
+  
+</html>
